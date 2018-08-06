@@ -3,14 +3,11 @@
  */
 const express = require('express');
 
+const routes = require('../api/routes/v1');
 
 const app = express();
 
 // mount api v1 routes
-app.get('/test', (req, res) => {
-  res.status(200).json({
-    status: 'ok'
-  })
-});
+app.use('/v1', routes);
 
 module.exports = app;

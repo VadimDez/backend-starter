@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.0"
+  },
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +23,7 @@
   },
   "homepage": "https://github.com/VadimDez/backend-starter#readme",
   "dependencies": {
+    "dotenv-safe": "^6.0.0",
     "express": "^4.16.3"
   },
   "devDependencies": {
