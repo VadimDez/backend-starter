@@ -24,7 +24,9 @@
   "homepage": "https://github.com/VadimDez/backend-starter#readme",
   "dependencies": {
     "dotenv-safe": "^6.0.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "winston": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
