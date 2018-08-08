@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: ./containers/node/Dockerfile
+    ports:
+    - "9000:9000"
