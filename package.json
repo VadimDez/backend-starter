@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "winston": "^3.0.0"
   },
   "devDependencies": {
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.3"
   }
 }
