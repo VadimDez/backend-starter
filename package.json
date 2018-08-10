@@ -9,7 +9,9 @@
   },
   "scripts": {
     "start": "nodemon index.js",
-    "test": "mocha"
+    "test": "npm run test:unit",
+    "test:unit": "mocha **/*.spec.js",
+    "test:unit:watch": "npm run test:unit -- --watch"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "winston": "^3.0.0"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.3"
   }
