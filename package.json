@@ -12,7 +12,7 @@
     "test": "npm run test:unit",
     "test:unit": "mocha **/*.spec.js",
     "test:unit:watch": "npm run test:unit -- --watch",
-    "test:integration": "mocha --timeout 20000 tests/integration"
+    "test:integration": "cross-env NODE_ENV=test mocha --timeout 20000 tests/integration"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,9 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "cross-env": "^5.2.0",
     "mocha": "^5.2.0",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "supertest": "^3.1.0"
   }
 }
