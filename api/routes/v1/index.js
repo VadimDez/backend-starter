@@ -5,12 +5,8 @@ const express = require('express');
 
 const router = express.Router();
 
+const controller = require('../../controllers/test.controller');
 
-router.get('/test', (req, res) => {
-	res.status(200).json({
-		status: 'ok'
-	})
-});
-
+router.get('/test', controller.get);
 
 module.exports = router;
