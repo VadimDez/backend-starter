@@ -46,3 +46,8 @@ Run integration tests
 ```
 test:integration
 ```
+
+Run integration test with watcher
+```
+test:integration:watch
+```

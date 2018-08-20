@@ -12,7 +12,8 @@
     "test": "npm run test:unit",
     "test:unit": "mocha **/*.spec.js",
     "test:unit:watch": "npm run test:unit -- --watch",
-    "test:integration": "cross-env NODE_ENV=test mocha --timeout 20000 tests/integration"
+    "test:integration": "cross-env NODE_ENV=test mocha --timeout 20000 tests/integration",
+    "test:integration:watch": "cross-env NODE_ENV=test mocha --watch --timeout 20000 tests/integration"
   },
   "repository": {
     "type": "git",
