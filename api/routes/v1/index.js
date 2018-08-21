@@ -3,10 +3,13 @@
  */
 const express = require('express');
 
-const router = express.Router();
-
+const { authorize } = require("../../middlewares/auth");
 const controller = require('../../controllers/test.controller');
 
+const router = express.Router();
+
 router.get('/test', controller.get);
+
+router.get('/protected', authorize, controller.protected);
 
 module.exports = router;
