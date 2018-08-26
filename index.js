@@ -5,6 +5,8 @@ const app = require('./config/express');
 const { port } = require('./config/vars');
 
 // listen to requests
-app.listen(port , () => console.info(`Server started on port ${ port }`));
+if(!module.parent) {
+	app.listen(port, () => console.info(`Server started on port ${ port }`));
+}
 
 module.exports = app;
