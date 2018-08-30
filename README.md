@@ -51,3 +51,9 @@ Run integration test with watcher
 ```
 test:integration:watch
 ```
+
+### Run in production
+
+```
+npm start
+```
