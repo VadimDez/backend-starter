@@ -1,6 +1,10 @@
 Backend Starter
 ===
 
+### Uses
+* IBM AppID
+* Express
+
 ### Prepare
 
 Environment variables
