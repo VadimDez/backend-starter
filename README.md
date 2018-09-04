@@ -2,8 +2,10 @@ Backend Starter
 ===
 
 ### Uses
-* IBM AppID
+* [IBM App ID](https://www.ibm.com/cloud/app-id)
 * Express
+* Nodemon
+* Mocha + Chai
 
 ### Prepare
 
