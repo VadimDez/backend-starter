@@ -6,6 +6,7 @@ Backend Starter
 * Express
 * Nodemon
 * Mocha + Chai
+* Docker
 
 ### Prepare
 
