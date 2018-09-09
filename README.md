@@ -8,6 +8,11 @@ Backend Starter
 * Mocha + Chai
 * Docker
 
+### Todos
+* Kubernetes
+* CI/CD pipeline
+
+
 ### Prepare
 
 Environment variables
