@@ -1,6 +1,18 @@
 Backend Starter
 ===
 
+### Uses
+* [IBM App ID](https://www.ibm.com/cloud/app-id)
+* Express
+* Nodemon
+* Mocha + Chai
+* Docker
+
+### Todos
+* Kubernetes
+* CI/CD pipeline
+
+
 ### Prepare
 
 Environment variables
@@ -61,4 +73,10 @@ bash build.sh
 To run image:
 ```
 bash run.sh
+```
+
+### Run in production
+
+```
+npm start
 ```
