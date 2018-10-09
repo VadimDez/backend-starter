@@ -1,0 +1,1 @@
+docker run -p 8081:3000 backend-starter

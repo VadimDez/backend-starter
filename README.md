@@ -51,3 +51,14 @@ Run integration test with watcher
 ```
 test:integration:watch
 ```
+
+### Docker
+
+To build image run:
+```
+bash build.sh
+```
+To run image:
+```
+bash run.sh
+```
