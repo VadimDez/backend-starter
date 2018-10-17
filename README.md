@@ -99,7 +99,7 @@ Copy result, paste and hit enter
 Build:
 ```
 // docker build --tag registry.<region>.bluemix.net/<my_namespace>/<repo_name>:<tag> .
-docker build --tag registry.eu-de.bluemix.net/<my_namespace>/frontend-starter:1 .
+docker build --tag registry.eu-de.bluemix.net/<my_namespace>/backend-starter:1 .
 ```
 
 Verify image is built:
