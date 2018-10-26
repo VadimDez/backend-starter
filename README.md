@@ -5,7 +5,7 @@ Backend Starter
 * [IBM App ID](https://www.ibm.com/cloud/app-id)
 * Express
 * Nodemon
-* Mocha + Chai
+* Jest
 * Docker
 
 ### Todos
