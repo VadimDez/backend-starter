@@ -1,0 +1,6 @@
+{
+  "testRegex": "tests/integration/(.*|(\\.|/)(test|spec))\\.js$",
+  "moduleFileExtensions": ["js", "jsx", "json", "node"],
+  "testPathIgnorePatterns": ["build", "unit-test"],
+  "testEnvironment": "node"
+}

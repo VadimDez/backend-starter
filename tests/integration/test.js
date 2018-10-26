@@ -2,23 +2,25 @@
  * Created by Vadym Yatsyuk on 11.08.18
  */
 const app = require('../../index');
-const request = require('supertest').agent(app.listen());
-const { expect } = require('chai');
+const request = require('supertest');
 
 describe('sample test', () => {
 	it('should pass', () => {
-		return request
+		return request(app)
 			.get('/v1/test')
 			.expect(200)
 			.then((res) => {
-				expect(res.body).to.deep.equal({ status: 'ok' });
+				expect(res.body).toEqual({ status: 'ok' });
 			});
 	});
 
 
-	it('should return 200 when accessing protected route with no auth header (only for test env)', () => {
-		return request
+	it('should return 200 when accessing protected route with no auth header (only for test env)', (done) => {
+		return request(app)
 			.get('/v1/protected')
-			.expect(200);
+			.expect(200)
+			.then(() => {
+				done();
+			});
 	});
 });

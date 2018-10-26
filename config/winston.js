@@ -37,7 +37,7 @@ switch (env) {
 				level: "debug"
 			})
 		);
-		return;
+		break;
 	default:
 		logger.add(
 			new winston.transports.Console({

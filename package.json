@@ -12,7 +12,7 @@
     "test": "npm run test:unit",
     "test:unit": "jest \"spec.js\"",
     "test:unit:watch": "npm run test:unit -- --watchAll",
-    "test:integration": "cross-env NODE_ENV=test mocha --timeout 20000 tests/integration",
+    "test:integration": "cross-env NODE_ENV=test jest --config=jest-integration-config.json --detectOpenHandles",
     "test:integration:watch": "npm run test:integration -- --watch"
   },
   "repository": {
