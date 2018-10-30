@@ -142,3 +142,5 @@ Take note of the "NodePort:" line as <nodeport>
 Run `bx cs workers <name-of-cluster>`, and note the public IP as <public-IP>.
 
 ### Licence
+
+[MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
