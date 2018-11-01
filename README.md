@@ -7,9 +7,9 @@ Backend Starter
 * Nodemon
 * Jest
 * Docker
+* Kubernetes
 
 ### Todos
-* Kubernetes
 * CI/CD pipeline
 
 
