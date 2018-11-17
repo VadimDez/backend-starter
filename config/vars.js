@@ -3,6 +3,8 @@
  */
 const path = require('path');
 
+// @Todo: check for .env
+
 // import .env variables
 require('dotenv-safe').load({
 	path: path.join(__dirname, '../.env'),
