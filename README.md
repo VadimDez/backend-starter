@@ -75,7 +75,10 @@ bash run.sh
 ### CI/CD pipeline
 
 * Build pipeline: simple
-* Test pipeline: use custom dockerimage: `node:8` with `npm i && npm test`
+* Test pipeline: use custom dockerimage: `node:8` with:
+```
+npm i && npm test
+```
 * Deploy pipeline: simple
 
 ### Run in production
