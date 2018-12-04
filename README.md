@@ -16,7 +16,7 @@ Environment variables
 
 * Create copy of `.env.example`
 * rename it to `.env`
-* Replace values with yours
+* Replace values in `.env` with yours
 
 Install dependencies
 
@@ -79,7 +79,7 @@ bash run.sh
 ```
 npm i && npm test
 ```
-* Deploy pipeline: simple
+* Deploy pipeline: simple (Don't forget to set runtime environment variables afterwards) 
 
 ### Run in production
 
