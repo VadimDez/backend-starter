@@ -14,9 +14,9 @@ Backend Starter
 
 Environment variables
 
-* Create copy of `.env.example`
-* rename it to `.env`
-* Replace values in `.env` with yours
+1. Create copy of `.env.example`
+1. rename it to `.env`
+1. Replace values in `.env` with yours
 
 Install dependencies
 
