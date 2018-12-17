@@ -36,13 +36,13 @@ npm start
 
 ##### Unit testing
 
-Run unit test once
+Run unit tests once
 
 ```
 test:unit
 ```
 
-Run unit test with watcher
+Run unit tests with watcher
 
 ```
 test:unit:watch
@@ -56,7 +56,7 @@ Run integration tests
 test:integration
 ```
 
-Run integration test with watcher
+Run integration tests with watcher
 ```
 test:integration:watch
 ```
