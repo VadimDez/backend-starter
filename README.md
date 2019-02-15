@@ -6,8 +6,8 @@ Backend Starter
 * Express
 * Nodemon
 * Jest
-* Docker
-* Kubernetes
+* Docker *(Optional)*
+* Kubernetes  *(Optional)*
 
 
 ### Prepare
