@@ -115,7 +115,7 @@ docker images
 
 Ensure you're logged in before pushing
 ```
-bx cr login
+ibmcloud cr login
 ```
 
 Push to the registry:
