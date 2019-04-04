@@ -1,7 +1,7 @@
 Backend Starter
 ===
 
-### Uses
+## Uses
 * [IBM App ID](https://www.ibm.com/cloud/app-id)
 * Express
 * Nodemon
@@ -10,7 +10,7 @@ Backend Starter
 * [Kubernetes](#kubernetes)*(Optional)*
 
 
-### Prepare
+## Prepare
 
 Environment variables
 
@@ -24,7 +24,7 @@ Install dependencies
 npm i
 ```
 
-### Start
+## Start
 
 Start running application on PORT defined in .env
 
@@ -32,7 +32,7 @@ Start running application on PORT defined in .env
 npm start
 ```
 
-### Testing
+## Testing
 
 ##### Unit testing
 
@@ -61,7 +61,7 @@ Run integration tests with watcher
 test:integration:watch
 ```
 
-### Docker
+## Docker
 
 To build image run:
 ```
@@ -72,7 +72,7 @@ To run image:
 bash run.sh
 ```
 
-### CI/CD pipeline
+## CI/CD pipeline
 
 * Build pipeline: simple
 * Test pipeline: use custom dockerimage: `node:8` with:
@@ -81,14 +81,14 @@ npm i && npm test
 ```
 * Deploy pipeline: simple (Don't forget to set runtime environment variables afterwards) 
 
-### Run in production
+## Run in production
 
 ```
 npm start
 ```
 
 
-### Kubernetes
+## Kubernetes
 
 ##### Configs
 Run:
@@ -147,6 +147,6 @@ Take note of the "NodePort:" line as <nodeport>
 
 Run `bx cs workers <name-of-cluster>`, and note the public IP as <public-IP>.
 
-### Licence
+# Licence
 
 [MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
