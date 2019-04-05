@@ -1,22 +1,22 @@
 Backend Starter
 ===
 
-### Uses
+## Uses
 * [IBM App ID](https://www.ibm.com/cloud/app-id)
 * Express
 * Nodemon
 * Jest
-* Docker
-* Kubernetes
+* [Docker](#docker) *(Optional)*
+* [Kubernetes](#kubernetes)*(Optional)*
 
 
-### Prepare
+## Prepare
 
 Environment variables
 
-* Create copy of `.env.example`
-* rename it to `.env`
-* Replace values with yours
+1. Create copy of `.env.example`
+1. rename it to `.env`
+1. Replace values in `.env` with yours
 
 Install dependencies
 
@@ -24,7 +24,7 @@ Install dependencies
 npm i
 ```
 
-### Start
+## Start
 
 Start running application on PORT defined in .env
 
@@ -32,17 +32,17 @@ Start running application on PORT defined in .env
 npm start
 ```
 
-### Testing
+## Testing
 
 ##### Unit testing
 
-Run unit test once
+Run unit tests once
 
 ```
 test:unit
 ```
 
-Run unit test with watcher
+Run unit tests with watcher
 
 ```
 test:unit:watch
@@ -56,12 +56,12 @@ Run integration tests
 test:integration
 ```
 
-Run integration test with watcher
+Run integration tests with watcher
 ```
 test:integration:watch
 ```
 
-### Docker
+## Docker
 
 To build image run:
 ```
@@ -72,23 +72,23 @@ To run image:
 bash run.sh
 ```
 
-### CI/CD pipeline
+## CI/CD pipeline
 
 * Build pipeline: simple
 * Test pipeline: use custom dockerimage: `node:8` with:
 ```
 npm i && npm test
 ```
-* Deploy pipeline: simple
+* Deploy pipeline: simple (Don't forget to set runtime environment variables afterwards) 
 
-### Run in production
+## Run in production
 
 ```
 npm start
 ```
 
 
-### Kubernetes
+## Kubernetes
 
 ##### Configs
 Run:
@@ -115,7 +115,7 @@ docker images
 
 Ensure you're logged in before pushing
 ```
-bx cr login
+ibmcloud cr login
 ```
 
 Push to the registry:
@@ -147,6 +147,6 @@ Take note of the "NodePort:" line as <nodeport>
 
 Run `bx cs workers <name-of-cluster>`, and note the public IP as <public-IP>.
 
-### Licence
+# Licence
 
 [MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
