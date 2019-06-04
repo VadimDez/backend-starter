@@ -4,13 +4,15 @@
 const app = require('../../index');
 const request = require('supertest');
 
-describe('sample test', () => {
+describe('sample integration tests', () => {
 	it('should pass', () => {
 		return request(app)
 			.get('/v1/test')
 			.expect(200)
 			.then((res) => {
-				expect(res.body).toEqual({ status: 'ok' });
+				expect(res.body).toEqual({
+					status: 'ok'
+				});
 			});
 	});
 
