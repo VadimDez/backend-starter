@@ -1,6 +1,8 @@
 Backend Starter
 ===
 
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/VadimDez/backend-starter&branch=master)
+
 ## Uses
 * [IBM App ID](https://www.ibm.com/cloud/app-id)
 * Express
