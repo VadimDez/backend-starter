@@ -7,7 +7,7 @@ const request = require('supertest');
 describe('sample integration tests', () => {
 	it('should pass', () => {
 		return request(app)
-			.get('/v1/test')
+			.get('/v1/health')
 			.expect(200)
 			.then((res) => {
 				expect(res.body).toEqual({

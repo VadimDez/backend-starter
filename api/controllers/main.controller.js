@@ -3,12 +3,16 @@
  */
 const httpStatus = require('http-status');
 
-exports.get = (req, res) => {
+exports.health = (req, res) => {
 	res.status(httpStatus.OK);
-	return res.json({ status: 'ok' });
+	return res.json({
+		status: 'ok'
+	});
 };
 
 exports.protected = (req, res) => {
 	res.status(httpStatus.OK);
-	return res.json({ status: 'protected route: ok' });
+	return res.json({
+		status: 'protected route: ok'
+	});
 };
