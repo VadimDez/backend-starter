@@ -36,7 +36,8 @@ stages:
     type: tester
     curatedDockerImage: default
     script: |-
-      npm test
+      npm i
+      npm run test:unit
     test_type: customimage
     docker_image: node:10
 - name: Deploy Stage
