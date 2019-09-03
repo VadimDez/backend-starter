@@ -21,6 +21,25 @@ stages:
       else
         echo "the post_build script does not exist";
       fi
+- name: Test Stage
+  inputs:
+  - type: job
+    stage: BUILD
+    job: Build
+    dir_name: null
+  triggers:
+  - type: stage
+  permission:
+    execute: TOOLCHAIN_ADMINS
+  jobs:
+  - name: Test
+    type: tester
+    curatedDockerImage: default
+    script: |-
+      npm i
+      npm run test:unit
+    test_type: customimage
+    docker_image: node:10
 - name: Deploy Stage
   inputs:
   - type: job
