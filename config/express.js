@@ -9,11 +9,16 @@ const methodOverride = require('method-override');
 const helmet = require('helmet');
 const cors = require('cors');
 const passport = require('passport');
+const swaggerUi = require('swagger-ui-express');
+const YAML = require('yamljs');
 
-const { logs } = require("./vars");
+const {
+  logs
+} = require("./vars");
 const winston = require("./winston");
 const routes = require('../api/routes/v1');
 const APP_ID_STRATEGY = require('./passport').APP_ID_STRATEGY;
+const swaggerDocument = YAML.load('./swagger.yaml');
 
 const app = express();
 
@@ -22,7 +27,9 @@ app.use(morgan(logs));
 
 // parse body params and attache them to req.body
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 // gzip compression
 app.use(compress());
@@ -43,5 +50,8 @@ passport.use(APP_ID_STRATEGY);
 
 // mount api v1 routes
 app.use('/v1', routes);
+
+// swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 module.exports = app;
