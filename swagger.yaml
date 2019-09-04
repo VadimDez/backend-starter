@@ -32,3 +32,5 @@ paths:
                 properties:
                   status:
                     type: string
+        "401":
+          description: Unauthorized
