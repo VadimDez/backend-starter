@@ -16,7 +16,6 @@ describe('sample integration tests', () => {
 			});
 	});
 
-
 	it('should return 200 when accessing protected route with no auth header (only for test env)', (done) => {
 		return request(app)
 			.get('/v1/protected')
@@ -24,5 +23,22 @@ describe('sample integration tests', () => {
 			.then(() => {
 				done();
 			});
+	});
+
+	describe('Validation', () => {
+		it('should return validation error', () => {
+			return request(app)
+				.post('/v1/objects')
+				.expect(400);
+		});
+
+		it('should return succes on passing all required body params', () => {
+			return request(app)
+				.post('/v1/objects')
+				.send({
+					name: "Obj name"
+				})
+				.expect(200);
+		});
 	});
 });

@@ -6,7 +6,7 @@
 
 - [IBM App ID](https://www.ibm.com/cloud/app-id)
 - Express
-- Swagger and Swagger UI
+- Swagger, Swagger UI and Swagger Request Validation
 - Nodemon
 - Jest
 - [Docker](#docker) _(Optional)_
@@ -70,9 +70,13 @@ test:integration:watch
 
 ## Swagger
 
-Swagger file can be found in root directory `swagger.yaml`
+Swagger OpenAPI file can be found in `swagger/swagger.yaml`
 
 After starting the serve Swagger UI is available under <http://localhost:3000/api-docs>
+
+## Validation
+
+The validation is done with use of `swagger.yaml`. (see example <https://github.com/VadimDez/backend-starter/blob/master/api/routes/v1/index.js#L20>)
 
 ## Docker
 

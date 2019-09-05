@@ -16,3 +16,9 @@ exports.protected = (req, res) => {
 		status: 'protected route: ok'
 	});
 };
+
+exports.post = (req, res) => {
+	return res.json({
+		status: "ok"
+	});
+}

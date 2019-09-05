@@ -10,7 +10,6 @@ const helmet = require('helmet');
 const cors = require('cors');
 const passport = require('passport');
 const swaggerUi = require('swagger-ui-express');
-const YAML = require('yamljs');
 
 const {
   logs
@@ -18,7 +17,9 @@ const {
 const winston = require("./winston");
 const routes = require('../api/routes/v1');
 const APP_ID_STRATEGY = require('./passport').APP_ID_STRATEGY;
-const swaggerDocument = YAML.load('./swagger.yaml');
+const {
+  swaggerDocument
+} = require('../swagger/swagger');
 
 const app = express();
 
@@ -49,7 +50,7 @@ app.use(passport.initialize());
 passport.use(APP_ID_STRATEGY);
 
 // mount api v1 routes
-app.use('/v1', routes);
+app.use('/api/v1', routes);
 
 // swagger
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));

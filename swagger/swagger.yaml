@@ -3,7 +3,7 @@ info:
   title: Backend API
   version: 1.0.0
 servers:
-  - url: http://localhost:300/api/v1
+  - url: http://localhost:3000/api/v1
 paths:
   /health:
     get:
@@ -34,3 +34,16 @@ paths:
                     type: string
         "401":
           description: Unauthorized
+  /objects:
+    post:
+      summary: persist object
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+              required:
+                - name
