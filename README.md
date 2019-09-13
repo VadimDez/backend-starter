@@ -72,7 +72,7 @@ test:integration:watch
 
 Swagger OpenAPI file can be found in `swagger/swagger.yaml`
 
-After starting the serve Swagger UI is available under <http://localhost:3000/api-docs>
+After starting the serve Swagger UI is available under <http://localhost:9000/api-docs>
 
 ## Validation
 
@@ -163,7 +163,7 @@ kubectl run backend-deployment --image=registry.eu-de.bluemix.net/<namespace>/ba
 Expose
 
 ```
-kubectl expose deployment/backend-deployment --type=NodePort --port=3000 --name=backend-service --target-port=3000
+kubectl expose deployment/backend-deployment --type=NodePort --port=9000 --name=backend-service --target-port=9000
 ```
 
 To find the port used on that worker node, examine your new service:
