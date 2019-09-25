@@ -7,7 +7,7 @@ const request = require('supertest');
 describe('sample integration tests', () => {
 	it('should pass', () => {
 		return request(app)
-			.get('/v1/health')
+			.get('/api/v1/health')
 			.expect(200)
 			.then((res) => {
 				expect(res.body).toEqual({
@@ -18,7 +18,7 @@ describe('sample integration tests', () => {
 
 	it('should return 200 when accessing protected route with no auth header (only for test env)', (done) => {
 		return request(app)
-			.get('/v1/protected')
+			.get('/api/v1/protected')
 			.expect(200)
 			.then(() => {
 				done();
@@ -26,19 +26,25 @@ describe('sample integration tests', () => {
 	});
 
 	describe('Validation', () => {
-		it('should return validation error', () => {
-			return request(app)
-				.post('/v1/objects')
-				.expect(400);
+		it('should return validation error', done => {
+			request(app)
+				.post('/api/v1/objects')
+				.expect(400)
+				.then(() => {
+					done();
+				});
 		});
 
-		it('should return succes on passing all required body params', () => {
-			return request(app)
-				.post('/v1/objects')
+		it('should return succes on passing all required body params', done => {
+			request(app)
+				.post('/api/v1/objects')
 				.send({
 					name: "Obj name"
 				})
-				.expect(200);
+				.expect(200)
+				.then(() => {
+					done();
+				});
 		});
 	});
 });
