@@ -121,6 +121,13 @@ ibmcloud ks cluster-config <cluster name>
 
 Copy result, paste and hit enter
 
+##### Namespace
+Create namespace if not created yet
+
+```
+ibmcloud cr namespace-add [my_namespace]
+```
+
 ##### Build image
 
 Build:
