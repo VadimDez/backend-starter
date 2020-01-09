@@ -1,6 +1,7 @@
 # Backend Starter
 
 [![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/VadimDez/backend-starter&branch=master)
+[![CircleCI](https://circleci.com/gh/VadimDez/backend-starter.svg?style=svg)](https://circleci.com/gh/VadimDez/backend-starter)
 
 ## Uses
 
