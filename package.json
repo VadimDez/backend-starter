@@ -45,7 +45,7 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "cross-env": "^6.0.3",
+    "cross-env": "^7.0.0",
     "jest": "^24.9.0",
     "supertest": "^4.0.2"
   }
