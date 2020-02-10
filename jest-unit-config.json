@@ -1,5 +1,5 @@
 {
-  "testRegex": "tests/integration/(.*|(\\.|/)(test|spec))\\.js$",
+  "testRegex": "tests/unit/(.*|(\\.|/)(test|spec))\\.js$",
   "moduleFileExtensions": ["js", "jsx", "json", "node"],
   "testEnvironment": "node"
 }
