@@ -1,19 +1,13 @@
-FROM node:10
+FROM registry.access.redhat.com/ubi8/nodejs-10
 
 # Change working directory
-WORKDIR "/app"
-
-# Update packages and install dependency packages for services
-RUN apt-get update \
- && apt-get dist-upgrade -y \
- && apt-get clean \
- && echo 'Finished installing dependencies'
+WORKDIR /opt/app-root/src/
 
 # Install npm production packages
-COPY package.json /app/
-RUN cd /app; npm install --production
+COPY package*.json /opt/app-root/src/
+RUN cd /opt/app-root/src; npm ci
 
-COPY . /app
+COPY . /opt/app-root/src/
 
 ENV NODE_ENV production
 ENV PORT 3000
@@ -21,4 +15,3 @@ ENV PORT 3000
 EXPOSE 3000
 
 CMD ["npm", "start"]
-
