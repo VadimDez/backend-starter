@@ -1,6 +1,6 @@
 # Backend Starter
 
-[![CircleCI](https://circleci.com/gh/VadimDez/backend-starter.svg?style=svg)](https://circleci.com/gh/VadimDez/backend-starter) [![Greenkeeper badge](https://badges.greenkeeper.io/VadimDez/backend-starter.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/VadimDez/backend-starter.svg?style=svg)](https://circleci.com/gh/VadimDez/backend-starter) 
 
 ### Deploying to IBM Cloud
 
