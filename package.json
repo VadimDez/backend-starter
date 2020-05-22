@@ -13,7 +13,9 @@
     "test:unit": "jest --config=jest-unit-config.json",
     "test:unit:watch": "npm run test:unit -- --watchAll",
     "test:integration": "cross-env NODE_ENV=test jest --config=jest-integration-config.json --detectOpenHandles",
-    "test:integration:watch": "npm run test:integration -- --watchAll"
+    "test:integration:watch": "npm run test:integration -- --watchAll",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -42,11 +44,13 @@
     "passport": "^0.4.1",
     "swagger-ui-express": "^4.1.4",
     "winston": "^3.2.1",
-    "yamljs": "^0.3.0"
+    "yamljs": "^0.3.0",
+    "snyk": "^1.324.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.0",
     "jest": "^25.1.0",
     "supertest": "^4.0.2"
-  }
+  },
+  "snyk": true
 }
