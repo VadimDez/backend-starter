@@ -45,7 +45,7 @@
     "swagger-ui-express": "^4.1.4",
     "winston": "^3.2.1",
     "yamljs": "^0.3.0",
-    "snyk": "^1.327.0"
+    "snyk": "^1.334.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.0",
