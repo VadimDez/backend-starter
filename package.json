@@ -43,7 +43,7 @@
     "nodemon": "^2.0.4",
     "passport": "^0.4.1",
     "swagger-ui-express": "^4.1.4",
-    "winston": "^3.3.2",
+    "winston": "^3.3.3",
     "yamljs": "^0.3.0",
     "snyk": "^1.335.0"
   },
