@@ -35,7 +35,7 @@
     "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
     "express-openapi-validate": "^0.5.1",
-    "helmet": "^3.23.1",
+    "helmet": "^3.23.2",
     "http-status": "^1.4.2",
     "ibmcloud-appid": "^6.1.0",
     "method-override": "^3.0.0",
