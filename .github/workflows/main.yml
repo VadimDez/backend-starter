@@ -18,6 +18,7 @@ jobs:
 
     env:
       DISABLE_LOGIN: 1
+      APP_ID_OAUTH_SERVER_URL: http://localhost:4321
 
     steps:
       - uses: actions/checkout@v2
