@@ -47,3 +47,13 @@ paths:
                   type: string
               required:
                 - name
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
