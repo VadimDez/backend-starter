@@ -1,6 +1,6 @@
 # Backend Starter
 
-[![CircleCI](https://circleci.com/gh/VadimDez/backend-starter.svg?style=svg)](https://circleci.com/gh/VadimDez/backend-starter) 
+![workflow](https://github.com/VadimDez/backend-starter/actions/workflows/main.yml/badge.svg)
 
 ### Deploying to IBM Cloud
 
