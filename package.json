@@ -14,7 +14,7 @@
     "test:unit:watch": "npm run test:unit -- --watchAll",
     "test:integration": "cross-env NODE_ENV=test jest --config=jest-integration-config.json --detectOpenHandles",
     "test:integration:watch": "npm run test:integration -- --watchAll",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "npm run snyk-protect"
   },
   "repository": {
@@ -45,7 +45,7 @@
     "swagger-ui-express": "^4.3.0",
     "winston": "^3.7.2",
     "yamljs": "^0.3.0",
-    "snyk": "^1.894.0"
+    "@snyk/protect": "~1.896.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
