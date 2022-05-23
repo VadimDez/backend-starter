@@ -40,7 +40,7 @@ npm i
 
 ## Start
 
-Start running application on PORT defined in .env
+Start running application on `PORT` defined in `.env` file
 
 ```
 npm start
