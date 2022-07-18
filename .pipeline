@@ -39,7 +39,7 @@ stages:
       npm i
       npm run test:unit
     test_type: customimage
-    docker_image: node:10
+    docker_image: node:16
 - name: Deploy Stage
   inputs:
   - type: job

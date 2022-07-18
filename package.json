@@ -40,7 +40,7 @@
     "ibmcloud-appid": "^6.2.5",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.19",
     "passport": "^0.5.2",
     "swagger-ui-express": "^4.3.0",
     "winston": "^3.7.2",

@@ -40,7 +40,7 @@ npm i
 
 ## Start
 
-Start running application on PORT defined in .env
+Start running application on `PORT` defined in `.env` file
 
 ```
 npm start
@@ -103,7 +103,7 @@ bash run.sh
 ## CI/CD pipeline
 
 - Build pipeline: simple
-- Test pipeline: use custom dockerimage: `node:12` with:
+- Test pipeline: use custom dockerimage: `node:16` with:
 
 ```
 npm i && npm test
