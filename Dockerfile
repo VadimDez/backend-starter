@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nodejs-14
+FROM registry.access.redhat.com/ubi8/nodejs-16
 
 # Change working directory
 WORKDIR /opt/app-root/src/
